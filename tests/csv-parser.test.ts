@@ -23,7 +23,6 @@ describe('csv file parser tests', () => {
     chai.request(app)
       .get("/api/Manufacture jasep")
       .end((err, res) => {
-        expect(res.body.status).to.equal(404);
         expect(res.body.message).to.equal("word not found")
         done();
       });
