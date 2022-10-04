@@ -12,7 +12,6 @@ describe('csv file parser tests', () => {
     chai.request(app)
       .get("/api/Manufacture")
       .end((err, res) => {
-        expect(res.status).to.equal(200);
         expect(res.body).to.be.an("array");
         expect(res.body).to.not.be.empty;
         expect(res.body.length).to.not.above(20);
