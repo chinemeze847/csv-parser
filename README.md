@@ -64,7 +64,6 @@ This request actually returns around 200 values but i limited it to 20. This sho
     chai.request(app)
       .get("/api/Manufacture")
       .end((err, res) => {
-        expect(res.status).to.equal(200);
         expect(res.body).to.be.an("array");
         expect(res.body).to.not.be.empty;
         expect(res.body.length).to.not.above(20);
@@ -79,6 +78,7 @@ This request actually returns around 200 values but i limited it to 20. This sho
     chai.request(app)
       .get("/api/Manufacture jasep")
       .end((err, res) => {
+        expect(res.status).to.equal(404);
         expect(res.body.message).to.equal("word not found")
         done();
       });
