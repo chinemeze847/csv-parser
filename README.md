@@ -71,6 +71,7 @@ This request actually returns around 200 values but i limited it to 20. This sho
       });
   });
 ```
+![image](https://user-images.githubusercontent.com/60647453/194016633-bb7a0e66-2d4f-4287-90ac-6147b088e9a0.png)
 
 * This test checks if it returns the correct message and status code if word is not found 
 ```typescript
