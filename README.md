@@ -57,6 +57,15 @@ This program has a  function that given a search term produces a json with searc
 ```
 This request actually returns around 200 values but i limited it to 20. This shows that the csv file is properly parsed.
 
+# Screenshots
+![image](https://user-images.githubusercontent.com/60647453/194017525-2c9e3749-fec3-4441-8644-1e37a010b9f6.png)
+
+![image](https://user-images.githubusercontent.com/60647453/194017805-40340c6f-2700-475e-9f52-5075e612c42a.png)
+
+![image](https://user-images.githubusercontent.com/60647453/194017974-b9d9329a-225e-422b-bfd5-c74f42868160.png)
+
+
+
 # Test 
 * This test checks that what is returned by the api is has the structure that is expected from it
 ```typescript
@@ -71,7 +80,6 @@ This request actually returns around 200 values but i limited it to 20. This sho
       });
   });
 ```
-![image](https://user-images.githubusercontent.com/60647453/194016633-bb7a0e66-2d4f-4287-90ac-6147b088e9a0.png)
 
 * This test checks if it returns the correct message and status code if word is not found 
 ```typescript
